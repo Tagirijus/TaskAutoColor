@@ -9,29 +9,37 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        $this->hook->on('model:task:creation:prepare', function (&$values) {
+            return $this->colorizeTaskByPriority(($values));
+        });
+
         $this->hook->on('model:task:modification:prepare', function (&$values) {
+            return $this->colorizeTaskByPriority(($values));
+        });
+    }
 
-            if (array_key_exists('priority', $values)) {
+    public function colorizeTaskByPriority(&$values)
+    {
+        if (array_key_exists('priority', $values)) {
 
-                if ($values['priority'] == 0) {
-                    $values['color_id'] = 'green';
-                }
-
-                elseif ($values['priority'] == 1) {
-                    $values['color_id'] = 'yellow';
-                }
-
-                elseif ($values['priority'] == 2) {
-                    $values['color_id'] = 'orange';
-                }
-
-                elseif ($values['priority'] == 3) {
-                    $values['color_id'] = 'pink';
-                }
+            if ($values['priority'] == 0) {
+                $values['color_id'] = 'green';
             }
 
-            return $values;
-        });
+            elseif ($values['priority'] == 1) {
+                $values['color_id'] = 'yellow';
+            }
+
+            elseif ($values['priority'] == 2) {
+                $values['color_id'] = 'orange';
+            }
+
+            elseif ($values['priority'] == 3) {
+                $values['color_id'] = 'pink';
+            }
+        }
+
+        return $values;
     }
 
     public function getPluginName()
@@ -53,7 +61,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.1.1';
+        return '0.2.0';
     }
 
     public function getCompatibleVersion()
