@@ -1,8 +1,16 @@
-# Tagi Task Color
+# TagiTaskAutoColor
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
 This plugin colorizes the task according to its priority from level 0 - 3. I did not want set up the cumberstone automatic system over and over again. Also I wanted the colorize feature to fit better to my workflow.
+
+
+Screenshots
+-------------
+
+**Task cards example**
+
+![TagiTaskAutoColor task cards example](../master/Screenshots/TagiTaskAutoColor_task_cards.png)
 
 
 Compatibility
