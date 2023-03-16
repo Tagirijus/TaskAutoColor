@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\TagiTaskAutoColor;
+namespace Kanboard\Plugin\TagiKPTaskAutoColor;
 
 use Kanboard\Core\Plugin\Base;
 
@@ -46,7 +46,7 @@ class Plugin extends Base
     {
         // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
         // Do not translate the plugin name here
-        return 'TagiTaskAutoColor';
+        return 'TagiKPTaskAutoColor';
     }
 
     public function getPluginDescription()
@@ -61,7 +61,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.2.0';
+        return '1.1.0';
     }
 
     public function getCompatibleVersion()
@@ -75,6 +75,6 @@ class Plugin extends Base
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/Tagirijus/kanboard-TagiTaskAutoColor';
+        return 'https://github.com/Tagirijus/TagiKPTaskAutoColor';
     }
 }
