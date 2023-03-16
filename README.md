@@ -1,4 +1,4 @@
-# TagiKPTaskAutoColor
+# TaskAutoColor
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
@@ -10,7 +10,7 @@ Screenshots
 
 **Task cards example**
 
-![TagiTaskAutoColor task cards example](../master/Screenshots/TagiTaskAutoColor_task_cards.png)
+![TaskAutoColor task cards example](../master/Screenshots/TaskAutoColor_task_cards.png)
 
 
 Compatibility
@@ -34,7 +34,7 @@ Installation
 ------------
 
 1. Go into Kanboards `plugins/` folder
-2. `git clone https://github.com/Tagirijus/TagiKPTaskAutoColor`
+2. `git clone https://github.com/Tagirijus/TaskAutoColor`
 
 
 Authors & Contributors
